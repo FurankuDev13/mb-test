@@ -1,0 +1,54 @@
+{# Template Form #}
+{{ form_start(form) }}
+    <div id="form-container" class="row">
+        <div class="col-md-3 bhoechie-tab-menu">
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <ul class="nav flex-column" id="bhoechie-tab-menu-container">
+                    
+                </ul>
+                <div class="divider"></div>
+                <div id="bhoechie-tab-actions-container">
+            
+                </div>
+
+            </div>
+        </div>
+            <div  class="list-group">
+            
+            </div>
+            
+        </div>
+
+        <div class="col-md-9 bhoechie-tab-target">
+
+            <div class="main-card mb-3 card">
+                <div class="card-header d-flex">
+                    <div class="card-header-label">Informations</div>
+                    <div class="card-header-actions w-25"></div>
+                </div>
+                <div class="card-body row">
+
+                    <div class="form-group form-group-row-custom col-12 row">
+                        <div class="col-sm-2 col-form-label">
+                            {{ form.code.vars.label }}
+                        </div>
+                        <div class="col-sm-10">
+                            {{ form_widget(form.code) }}
+                        </div>
+
+                        <div class="col-sm-2 col-form-label">
+                            {{ form.vesselType.vars.label }}
+                        </div>
+                        <div class="col-sm-10">
+                            {{ form_widget(form.vesselType) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="save-hidden" class="d-none"><i class="far fa-save"></i>&nbsp;{% trans %}Enregistrer{% endtrans %}</button>
+
+        </div>
+    </div>
+{{ form_end(form) }}

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block main_title %}
+    {{ action }}
+{% endblock %}
+
+{% block actions %}
+    <button id="fleet-add" class="btn-shadow ml-1 mr-1 btn btn-primary">
+        Ajouter la flotte (50 vaisseaux)
+    </button>
+{% endblock %}
+
+{% block main %}
+    {{ include('dashboard/_test.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript"s src="{{ asset('assets/js/mb_test.js') }}"></script>
+{% endblock %}
+
+

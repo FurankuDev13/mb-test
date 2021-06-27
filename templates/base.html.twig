@@ -1,0 +1,130 @@
+<!--
+=========================================================
+* ArchitectUI HTML Theme Dashboard - v1.0.0
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html>
+
+    {# HEAD #}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Language" content="fr">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+        <meta name="description" content="Ludi-Kazoku backoffice.">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        {# TITLE #}
+        <title>Ludi-Kazoku&nbsp;-{% block title %}Backoffice{% endblock %}</title>
+
+        {# STYLES #}
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/Bootstrap-4-4.1.1/css/bootstrap.min.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/bootstrap-toggle/bootstrap-toggle.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/Datatables/datatables.min.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}"/>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/mb_main.css') }}"/>
+
+        {# BLOCK STYLES CUSTOM #}
+        {% block stylesheets %}
+        
+        {% endblock %}
+
+    </head>
+
+    {# BODY / TEMPLATE #}
+    <body>
+        <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+
+            {# TEMPLATE HEADER #}
+            {{ include('_header.html.twig') }}
+    
+            {# TEMPLATE BODY #}
+            <div class="app-main">
+
+                {# TEMPLATE SIDEBAR #} 
+                {{ include('_sidebar.html.twig') }}
+
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+
+                                {# TEMPLATE TITLE #}
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        {% block main_icon %}
+                                            <i class="pe-7s-musiclist"></i>
+                                        {% endblock %}
+                                    </div>
+                                    <div id="page-title">
+                                        {% block main_title %}
+                                            
+                                        {% endblock %}
+                                        <div class="page-title-subheading">
+                                            {% block sub_title %}
+
+                                            {% endblock %}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {# TEMPLATE ACTIONS #}
+                                <div class="page-title-actions d-flex justify-content-end align-items">
+                                    {% block actions %}
+
+                                    {% endblock %}
+                                </div>
+
+                            </div>
+                        </div>  
+                        
+                        {# BLOCK MAIN #}
+                        {% block main %}
+                            
+                        {% endblock %}
+                        
+                    </div>
+
+                    {# TEMPLATE FOOTER #}
+                    {{ include('_footer.html.twig') }}
+
+                </div>
+            </div>
+        </div>
+
+        {# TEMPLATE DATA CONTAINER #}
+        <div id="template--data--container" style="background-color:#F9F9FC;">    
+
+        {# SCRIPTS #}
+        <script type="text/javascript" src="https://kit.fontawesome.com/1b03d82462.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script type="text/javascript" src="{{ asset('assets/jQuery-3.3.1/jquery-3.3.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/Bootstrap-4-4.1.1/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/bootstrap-toggle/bootstrap-toggle.js') }}"></script> 
+        <script type="text/javascript" src="{{ asset('assets/Datatables/datatables.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/scripts/main.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/pace.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/holdOn.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/jquery-ui.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/kendo.all.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
+        <script type="text/javascript" src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+        <script type="text/javascript"s src="{{ asset('assets/js/mb_main.js') }}"></script>
+
+        {# BLOCK SCRIPTS CUSTOMS #}
+        {% block javascripts %}
+        
+        {% endblock %}
+    </body>
+</html>
+
+    
+
+    

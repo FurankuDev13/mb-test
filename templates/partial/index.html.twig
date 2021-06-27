@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link href="lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+    {% for widget in widgets %}
+        {% include 'partial/_list.html.twig' %}
+    {% endfor %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="assets/js/datepicker.js" type="text/javascript"></script> 
+    <script src="assets/js/mb_datatables.js" type="text/javascript"></script> 
+{% endblock %}

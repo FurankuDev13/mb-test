@@ -1,0 +1,102 @@
+/********* Tables *********/
+
+.datatable-list th {
+    font-size: 0.8rem !important;
+    width: 8%;
+}
+
+.datatable-list td {
+	font-size: 0.75rem !important;
+}
+
+.datatable-list th.introduction {
+    min-width: 20% !important;
+    max-width: 40% !important;
+}
+
+.datatable-list td.introduction p {
+    font-size: 0.7rem !important;
+    font-style: italic !important;
+}
+
+.datatable-list th.slug {
+    width: 15% !important;
+}
+
+.datatable-list td.slug {
+    font-size: 0.6rem !important;
+    font-style: italic !important;
+}
+
+.datatable-list th.code {
+    width: 8% !important;
+}
+
+.datatable-list td.code {
+    font-size: 0.8rem !important;
+}
+
+.datatable-list th.extrafield, th.relation {
+    width: 15% !important;
+}
+
+.datatable-list th.select-checkbox {
+    padding-right: 0.5rem !important;
+    width: 2% !important;
+}
+
+.datatable-list th.select-checkbox:before, .datatable-list th.select-checkbox:after {
+    display:none !important;
+}
+
+.datatable-list th.is_published {
+    width: 5% !important;
+}
+
+.datatable-list th.is_active, th.ordre {
+    width: 5% !important;
+}
+
+.datatable-list th.actions {
+    width: 10% !important;
+}
+
+.datatable-list th.libelle {
+    font-size: 0.9rem !important;
+    min-width: 20% !important;
+}
+
+.datatable-list td.libelle {
+    font-weight: 800 !important;
+}
+
+.buttons-columnVisibility {
+    color:#6c757d !important;
+    font-weight: 400 !important;
+    background-color: transparent !important;
+}
+
+.buttons-columnVisibility.active {
+    color:#3f6ad8 !important;
+    font-weight: 800 !important;
+    background-color: transparent !important;
+
+}
+
+/********* Forms *********/
+
+.form-group-row-custom .col-sm-8  {
+    padding-left: 0.2rem !important;
+}
+
+.form-group-row-custom .col-sm-10 {
+    padding-left: 0 !important;
+}
+
+.form-group-row-custom .col-sm-10 input {
+    width: 95%;
+}
+
+.form-group input {
+    width: 100%;
+}

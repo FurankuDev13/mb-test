@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ action }}{% endblock %}
+
+{% block main_icon %}
+    <i class="pe-7s-musiclist"></i>
+{% endblock %}
+
+{% block main_title %}
+    {{ action }}
+{% endblock %}
+
+{% block actions %}
+    <a class="btn-shadow ml-1 mr-1 btn btn-dark" href="{{ path(retour) }}"><i class="fas fa-list"></i>&nbsp;{% trans %}Retour à la liste{% endtrans %}</a>
+    <button id="save-action" class="btn-shadow ml-1 mr-1 btn btn-primary"><i class="far fa-save"></i>&nbsp;{% trans %}Enregistrer{% endtrans %}</button>
+{% endblock %}
+
+{% block main %}
+    {{ include('vessel/_form.html.twig') }}
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript"s src="{{ asset('assets/js/mb_forms.js') }}"></script>
+{% endblock %}

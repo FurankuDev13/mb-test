@@ -1,0 +1,29 @@
+{# Template Widget List #}
+<div class="col-{{ widget.taille }}">
+    <!-- begin:: Content -->
+    <div id="{{ widget.code }}" class="list-container">
+
+        {# List Body #}
+        <div class="list-container-body">
+            <!-- begin:: Search -->
+            <div class="list-form">
+                <div class="row list-container-customsearch">
+                </div>
+            </div>
+            <!-- end:: Search -->
+            <!--begin: Datatable -->
+            <table class="datatable-list table table-striped- table-bordered table-hover table-checkable" data-code="{{ widget.code }}" data-config="{{ widget.config is defined ? widget.config|json_encode() : null }}" data-champs="{{ widget.champs is defined ? widget.champs|json_encode() : null }}" data-extrafields="{{ widget.extrafields is defined ? widget.extrafields|json_encode() : null }}" data-sql="{{ widget.sql }}" data-titre="{{ widget.titre }}">
+                <thead>
+                    <tr>
+                        <!--Filled by script -->
+                        <th class="table-select-header"></th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            </table>
+            <!--end: Datatable -->
+        </div>
+        
+    </div>
+    <!-- end:: Content -->
+</div>
